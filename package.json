@@ -1,0 +1,9 @@
+{
+  "name": "incidents-server",
+  "version": "1.0.0",
+  "description": "Server for Incident Tracker",
+  "main": "app.js",
+  "engines": {
+    "node": "10.x"
+  }
+}
