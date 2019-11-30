@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "Server for Incident Tracker",
   "main": "app.js",
+  "dependencies": {
+    "express": "^4.4.5"
+  },
   "engines": {
     "node": "10.x"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }
