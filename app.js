@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 4000;
+
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const expressJwt = require('express-jwt');
@@ -158,6 +160,6 @@ app.patch('/api/editIncident', (req, res) => {
     });
 });
 
-app.listen(4000, function () {
-    console.log('Netcracker App API Server listening on port 4000!');
+app.listen(port, function () {
+    console.log(`Netcracker App API Server listening on port ${port}!`);
 });
