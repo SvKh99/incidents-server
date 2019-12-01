@@ -26,7 +26,6 @@ function quickSearchByID(search, arr){
 }
 
 app.use(bodyParser.json());
-app.use(expressJwt({ secret: 'accessKey' }).unless({ path: ['/api/auth', '/api/refreshToken'] }));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "https://incident-tracker-by-svetlanka.herokuapp.com");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
