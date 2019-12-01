@@ -144,7 +144,7 @@ app.post('/api/addIncident', (req, res) => {
     });
 });
 
-app.patch('/api/editIncident', (req, res) => {
+app.post('/api/editIncident', (req, res) => {
     let editedParams = req.body;
     console.log(editedParams);
 
